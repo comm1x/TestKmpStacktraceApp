@@ -20,6 +20,7 @@ kotlin {
         it.binaries.framework {
             baseName = "shared"
             isStatic = true
+            freeCompilerArgs += listOf("-Xtemporary-files-dir=/Users/cmx/tmp/TestKmpStacktraceApp/build")
         }
     }
 
