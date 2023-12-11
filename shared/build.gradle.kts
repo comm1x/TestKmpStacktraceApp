@@ -19,7 +19,7 @@ kotlin {
     ).forEach {
         it.binaries.framework {
             baseName = "shared"
-            isStatic = true
+            isStatic = false
             freeCompilerArgs += listOf("-Xtemporary-files-dir=/Users/cmx/tmp/TestKmpStacktraceApp/build")
         }
     }
